@@ -31,6 +31,7 @@ Plug 'preservim/nerdtree' "File Explorer.
 Plug 'preservim/nerdcommenter' "Comment plugin
 Plug 'christoomey/vim-tmux-navigator' "tmux navigator
 Plug 'raimondi/delimitmate' "auto closing ( ' 
+Plug 'vim-airline/vim-airline' "status bar
 call plug#end() "End
 colorscheme gruvbox "Set colorscheme according to plugin
 
