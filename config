@@ -26,13 +26,13 @@ floating_modifier $mod
 
 
 #Start-up commands:
-exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper2.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper1.jpg
 
 
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec i3-sensible-terminal
+bindsym $mod+Shift+Return exec gnome-terminal
 
 #i3-gaps config
 hide_edge_borders both
@@ -46,7 +46,7 @@ bindsym $mod+plus gaps inner current minus 5
 bindsym $mod+bracketleft gaps outer current plus 5
 bindsym $mod+bracketright gaps outer current minus 5
 
-# kill focused window
+# kill focused window and all windows
 bindsym $mod+q kill
 bindsym $mod+Shift+q [class=".*"] kill
 
@@ -152,10 +152,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
 #Workspaces assigments
-#assign [class="Alacritty"] $ws2
-for_window [class="Alacritty"] $ws2
-assign [class="Gnome-terminal"] $ws1
+assign [class="Alacritty"] $ws1
+#for_window [class="Alacritty"] $ws1
+assign [class="Gnome-terminal"] $ws2
 assign [class="firefox"] $ws3
+assign [class="1Password"] $ws4
+assign [class="discord"] $ws5
 
 
 
